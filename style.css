@@ -1,0 +1,16 @@
+h2 {
+	align : center;
+	font-family : verdana;
+	font-size : 20px;
+}
+
+p {
+	font-family : verdana;
+	font-size : 12px;
+}
+
+.contenedor {
+	display : flex;
+	flex-direction : row;
+	justify-content : space-evenly;
+}
