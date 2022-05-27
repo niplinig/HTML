@@ -1,69 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="This is my web page" />
-    <title>Nicolas Plaza</title>
-    <style>
-      img {
-        width: 100px;
-        border-radius: 50px;
-        float: left;
-        margin-right: 10px;
-      }
-      .username {
-        font-weight: bold;
-      }
-      .coffee {
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 0px;
-      }
-    </style>
-  </head>
-  <body>
-    <img src="images/square.jpg" alt="Image" />
-    <p class="username">@niplinig</p>
-    <p>I love to write &lt;HTML&gt;</p>
-    <a href="company/about.html">About Me</a>
-    <a href="images/square.jpg" download>Download my picture</a>
-    <a href="#section-css">CSS</a>
-    <a href="https://google.com" target="_blank">Google</a>
-    <a href="mailto:niplinig@espol.edu.ec">Email me</a>
-    <h2>HTML</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illo rem
-      magni iste? Iusto, beatae! Quia fugit corrupti repellat officia tempora
-      non ipsam amet delectus laborum nesciunt porro voluptate commodi,
-      voluptatem incidunt dolorem, dolores ipsum cumque obcaecati! Maiores, iure
-      a. Porro natus, vero ullam molestiae aliquid est! Totam, vel quaerat. Nam
-      ipsa rem molestiae! Totam, ipsa. Error veritatis, reprehenderit,
-      perspiciatis ea quidem dolor ex eaque placeat minima odit molestiae vero
-      ut illum. Atque quod harum saepe amet sunt tempore aliquam delectus ipsa,
-      cumque unde! Quam culpa nobis nemo? Magnam doloribus nemo atque eligendi
-      ex natus provident, doloremque delectus quisquam recusandae nulla ullam
-      eos blanditiis, voluptas et, est illum temporibus. Ullam, quaerat illo?
-      Necessitatibus quod pariatur sequi, voluptatum rem eius nam! Voluptatibus
-      culpa placeat ullam cum soluta rem labore ipsam molestias! Doloremque iure
-      assumenda libero optio inventore nemo aliquid rerum mollitia reiciendis
-      eligendi! Aspernatur perspiciatis sit exercitationem veniam, enim itaque!
-      Magnam beatae illum ad odit repudiandae quo ullam soluta inventore,
-      possimus voluptatibus facilis nulla. Harum libero quas, dolores incidunt
-      voluptatum voluptatem rerum ullam, natus tempore vitae suscipit tempora
-      molestiae enim earum adipisci iste ipsum. Magnam nobis saepe reiciendis,
-      sapiente illum odit vel quis. Necessitatibus at repellendus, magnam
-      perspiciatis ea ipsam quam.
-    </p>
-    <h2 id="section-css">CSS</h2>
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum placeat
-      illum asperiores consectetur molestiae, nisi eos? Tempora pariatur
-      voluptatibus hic, odio voluptatem perspiciatis mollitia fugiat soluta
-      consequuntur, perferendis cupiditate minima.
-    </p>
-    <a href="#">Jump to top</a>
-    <img class="coffee" src="images/coffee.jpg" alt="A coffee mug on a table" />
-  </body>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" >
+        <!--Meta-->
+        <title>Nicolás Plaza</title>
+        <meta content="Nicolas Plaza" name="title">
+        <meta content="Nicolas Plaza" itemprop="name">
+        <meta content="My CV online" name="description">
+        <meta content="My CV online" itemprop="description">
+        <!--link-->
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel="icon" href="assets/favicon.svg">
+        <!--script-->
+        <script src="assets/script.js"></script>
+    </head>
+    <body>
+        <header class="top">
+            <div>
+                <div>
+                    <a class="logo" href=".">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-smile"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                    </a>
+                </div>
+                <nav class="index">
+                    <ul>
+                        <li>
+                            <a class="core" href="#core">Core</a>
+                        </li>
+                        <li>
+                            <a class="circle" href="#circle">Circle</a>
+                        </li>
+                        <li>
+                            <a class="dev" href="#development">Development</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="top-row">
+            <div class="container">
+                <img id="logo" alt="Nicolás Plaza" src="assets/logo.svg">
+                <img class="illustration" alt="ilustration" src="assets/ilustration.svg">
+                <h2>Welcome to my website</h2>
+                <p>I'm Nicolas, student at ESPOL currenly studing Computer Science. I enjoy programming and developing projects that users would enjoy</p>
+            </div>
+        </div>
+        <div class="main-row centered"></div>
+        <div class="applist-row"></div>
+    </body>
 </html>
