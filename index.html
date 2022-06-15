@@ -1,25 +1,104 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="es-EC">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My webpage</title>
-    <link rel="stylesheet" href="style-desktop.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <div class="container">
+    <header>
+      <img src="" alt="logo" />
+    </header>
+    <nav>
+      <h2>nav</h2>
+      <ul>
+        <li>Imágenes</li>
+        <li>Características</li>
+        <li>Localización</li>
+        <li>Contactos</li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Alquiler de local comercial</h2>
+      <a href="https://goo.gl/maps/1z9VvcSZJkNgQStZ9"
+        >Teodoro Alvardo Oleas, Guayaquil</a
+      >
       <div class="grid-container">
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>
-        <div class="grid-item">7</div>
-        <div class="grid-item">8</div>
-        <div class="grid-item">9</div>
+        <div class="grid-item">
+          <img src="assets/fuera lejos frente 4.jpg" alt="" />
+        </div>
+        <div class="grid-item">
+          <img src="assets/fuera frente.jpg" alt="" />
+        </div>
+        <div class="grid-item">
+          <img src="assets/interior derecho.jpg" alt="" />
+        </div>
       </div>
-    </div>
-    <script src="script.js"></script>
+
+      <form action="">
+        <label for="name" class="field">
+          <span class="label-text">Full Name</span>
+          <input type="text" id="name" />
+        </label>
+        <label for="email" class="field">
+          <span class="label-text">Email</span>
+          <input type="email" id="email" />
+        </label>
+        <label for="message" class="field">
+          <span class="label-text">Longer</span>
+          <textarea name="" id="message"></textarea>
+        </label>
+        <button>send!</button>
+      </form>
+    </main>
+    <footer>
+      <div class="social-footer-left">
+        <a href="">
+          <div class="image"></div>
+        </a>
+        <div class="social-footer-icons">
+          <ul class="menu-simple">
+            <li>
+              <a href="www.github.com">
+                <div class="icon">
+                  <img src="" alt="github icon" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://codepen.io/niplinig">
+                <div class="icon">
+                  <img src="" alt="codepen icon" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://replit.com/@Niplinig">
+                <div class="icon">
+                  <img src="" alt="replit icon" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://t.me/NicolasPlaza">
+                <div class="icon">
+                  <img src="" alt="telegram icon" />
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
