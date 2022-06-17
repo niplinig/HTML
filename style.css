@@ -22,39 +22,20 @@ nav {
   grid-area: nav;
 }
 main {
+  width: 70%;
   grid-area: main;
+  margin: 0 auto;
 }
 footer {
   grid-area: footer;
 }
 
-.field {
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  grid-column-gap: 1em;
-  margin-bottom: 1em;
-}
-
 /* Sub-Grids */
-
-.field {
-  display: grid;
-  grid-column: span 2;
-  grid-template-columns: inherit;
-  grid-template-columns: subgrid;
-  grid-column-gap: inherit;
-}
-
-form {
-  width: 80vw;
-  max-width: 30em;
-}
 
 /* show… */
 body {
   color: #1b1b1f;
   font-family: "Noto Sans", sans-serif;
-  background-color: #005ac1;
 }
 
 .wrapper {
@@ -67,7 +48,7 @@ header,
 nav,
 main,
 footer {
-  background: #fefbff;
+  background: #fff;
   padding: 1em;
 }
 
@@ -130,16 +111,72 @@ table tbody tr:nth-child(even) {
   background-color: #f5f5f5;
 }
 
-.map-wrapper {
-  max-width: 50vh;
-}
-
-.map {
+.contact-in {
   width: 100%;
-  margin: 0;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: 0 0 0.3rem 0 rgb(168, 168, 168);
 }
 
-@media (min-width: 40em) {
+.contact-map {
+  width: 100%;
+  height: auto;
+  flex: 50%;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-form {
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  flex: 50%;
+}
+
+.contact-form h3 {
+  margin-bottom: 1rem;
+}
+
+.contact-form-txt,
+.contact-form-textarea {
+  width: 100%;
+  height: 3rem;
+  color: #000;
+  border: 0.1rem solid #bcbcbc;
+  border-radius: 0.5rem;
+  outline: none;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-family: sans-serif;
+}
+
+.contact-form-txt::placeholder,
+.contact-form-textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form-btn {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  background: lightblue;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
   body {
     grid:
       "header header" auto
@@ -149,7 +186,11 @@ table tbody tr:nth-child(even) {
   }
 }
 
-@media all and (max-width: 500px) {
+@media screen and (max-width: 500px) {
+  main {
+    width: 100%;
+  }
+
   table {
     width: 100%;
     border-collapse: collapse;
@@ -167,5 +208,17 @@ table tbody tr:nth-child(even) {
   tr {
     display: block;
     margin-bottom: 30px;
+  }
+
+  table tbody tr:nth-child(even) {
+    background-color: #fff;
+  }
+
+  .contact-map {
+    flex: 100%;
+  }
+
+  .contact-form {
+    flex: 100%;
   }
 }
