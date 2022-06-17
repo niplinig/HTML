@@ -46,8 +46,7 @@ body {
 
 header,
 nav,
-main,
-footer {
+main {
   background: #fff;
   padding: 1em;
 }
@@ -65,13 +64,13 @@ footer {
   background-repeat: no-repeat;
 }
 
-img {
+.grid-container img {
   width: 100%;
   height: auto;
   border-radius: 0.5rem;
 }
 
-img:hover {
+.grid-container img:hover {
   box-shadow: 0.3rem 0.3rem 0.2rem 0.1rem rgba(36, 31, 49, 0.2);
 }
 
@@ -103,8 +102,8 @@ table th {
 }
 
 table th {
-  background-color: darkblue;
-  color: #fff;
+  background-color: lightblue;
+  color: black;
 }
 
 table tbody tr:nth-child(even) {
@@ -176,13 +175,116 @@ table tbody tr:nth-child(even) {
   cursor: pointer;
 }
 
+.contact-form textarea {
+  resize: none;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer {
+  background-color: lightblue;
+  padding: 1rem 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 1rem;
+}
+
+.footer-col h4 {
+  font-weight: lighter;
+  font-size: 18px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  background-color: lightcoral;
+  height: 0.1rem;
+  box-sizing: border-box;
+  width: 5rem;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  font-weight: lighter;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: white;
+  padding-left: 0.7rem;
+}
+
+.footer-col .social-links a:hover {
+  padding-left: 0;
+}
+
+.footer-col .social-links ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.footer-col .social-links ul li a img {
+  width: 40px;
+  height: 40px;
+}
+
 @media screen and (min-width: 900px) {
   body {
     grid:
       "header header" auto
       "nav main" 1fr
-      "nav footer" auto
+      "footer footer" auto
       / 12em 1fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 5rem;
+  }
+  .footer-col .social-links ul {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  .footer-col .social-links ul {
+    flex-direction: column;
   }
 }
 
