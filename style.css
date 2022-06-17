@@ -258,6 +258,23 @@ table tbody tr:nth-child(even) {
   height: 40px;
 }
 
+h1,
+h2,
+h3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.video-container {
+  margin: 0 auto;
+  width: 50%;
+}
+
 @media screen and (min-width: 900px) {
   body {
     grid:
@@ -275,6 +292,9 @@ table tbody tr:nth-child(even) {
   }
   .footer-col .social-links ul {
     flex-direction: column;
+  }
+  .video-container {
+    width: 100%;
   }
 }
 
@@ -322,5 +342,9 @@ table tbody tr:nth-child(even) {
 
   .contact-form {
     flex: 100%;
+  }
+
+  .video-container {
+    width: 100%;
   }
 }

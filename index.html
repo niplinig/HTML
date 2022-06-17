@@ -20,20 +20,28 @@
       <img src="" alt="logo" />
     </header>
     <nav>
-      <h2>nav</h2>
-      <ul>
-        <li>Imágenes</li>
-        <li>Características</li>
-        <li>Localización</li>
-        <li>Contactos</li>
-      </ul>
+      <h2>Navegación</h2>
+      <ol>
+        <li>
+          <a href="#images">Imágenes</a>
+        </li>
+        <li>
+          <a href="#features">Características</a>
+        </li>
+        <li>
+          <a href="#location">Localización</a>
+        </li>
+        <li>
+          <a href="#video">Video</a>
+        </li>
+      </ol>
     </nav>
     <main>
       <h2>Alquiler de local comercial</h2>
       <a href="https://goo.gl/maps/1z9VvcSZJkNgQStZ9" target="_blank"
         >Teodoro Alvardo Oleas, Guayaquil</a
       >
-      <h2>Imágenes</h2>
+      <h2 id="images">Imágenes</h2>
       <div class="grid-container">
         <div class="grid-item">
           <img src="assets/fuera lejos frente 4.jpg" alt="" />
@@ -45,7 +53,7 @@
           <img src="assets/interior derecho.jpg" alt="" />
         </div>
       </div>
-      <h2>Tabla</h2>
+      <h2 id="features">Características</h2>
       <table class="table">
         <thead>
           <th>Datos</th>
@@ -75,7 +83,7 @@
           </tr>
         </tbody>
       </table>
-      <h2>Formulario y Mapa</h2>
+      <h2 id="location">Localización</h2>
       <div class="contact-in">
         <div class="contact-map">
           <iframe
@@ -101,9 +109,13 @@
           </form>
         </div>
       </div>
-
-      <div class="video">
-        <video src="https://photos.app.goo.gl/c1ePuALv5JFDDh456"></video>
+      <h2 id="video">Video</h2>
+      <div class="video-container">
+        <video controls autoplay="true" muted loop>
+          <source src="/assets/video.webm" type="video/webm" />
+          <source src="/assets/video.ogg" type="video/ogg" />
+          Lo siento, tu navegador no soporta videos embebidos
+        </video>
       </div>
     </main>
     <footer class="footer">
