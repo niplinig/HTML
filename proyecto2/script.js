@@ -1,8 +1,9 @@
-const title = document.getElementById("poke_title")
+const title = document.getElementById("poke_title");
+const favicon = document.getElementById("favicon");
 const select = document.querySelector("select");
 const chart_css = document.getElementById("ChartCSS");
 const div_canvas = document.getElementById("ChartJS");
-const div_image = document.getElementById("poke_img")
+const div_image = document.getElementById("poke_img");
 const ul = document.getElementById("poke_info");
 const h1 = document.getElementById("poke_name");
 const table_moves = document.getElementById("poke_moves");
@@ -33,7 +34,9 @@ select.addEventListener("change", async () => {
 });
 
 function loadPokemonName(pokemon) {
+	favicon.setAttribute("href", pokemon.sprites.front_default);
 	const name = pokemon.name[0].toUpperCase() + pokemon.name.substring(1);
+	title.innerHTML = name;
 	h1.textContent = name + " # " + pokemon.id;
 }
 
