@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<!-- link -->
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+	<title id="poke_title">Proyect</title>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<header
+			class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-5 mb-4 border-bottom">
+			<ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+				<li class="nav-item">
+					<select class="form-select" aria-label="Default select example">
+						<option selected>pikachu</option>
+						<option>charizard</option>
+						<option>snorlax</option>
+						<option>chimchar</option>
+						<option>sceptile</option>
+					</select>
+				</li>
+			</ul>
+		</header>
+
+		<div class="container col-xxl-8 px-4">
+			<div class="row flex-lg-row-reverse align-items-center g-5">
+				<div class="col-10 col-sm-8 col-lg-6">
+					<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+								class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+								aria-label="Slide 2"></button>
+						</div>
+						<div id="poke_img" class="carousel-inner">
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+							data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+							data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<h1 class="display-5 fw-bold lh-1 mb-3" id="poke_name">PokemonName</h1>
+					<ul id="poke_info" class="list-group">
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<main>
+
+			<div class="row align-items-md-stretch">
+
+				<div class="col-md-6">
+					<div class="h-100 p-5 bg-light border rounded-3">
+						<table id="chart_table" class="charts-css column show-heading show-labels show-primary-axis">
+							<caption>Base Stats</caption>
+							<thead>
+								<tr></tr>
+							</thead>
+							<tbody id="ChartCSS">
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="h-100 p-5 bg-light border rounded-3">
+						<h2>Base Stats</h2>
+						<div id="ChartJS" class="col">
+							<canvas id="myChart"></canvas>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+
+			<h2>List of Moves</h2>
+			<table class="table">
+				<thead>
+					<tr>
+						<th scope="col">Level</th>
+						<th scope="col">Move</th>
+					</tr>
+				</thead>
+				<tbody id="poke_moves">
+				</tbody>
+			</table>
+
+
+		</main>
+
+		<footer class="pt-4 my-md-5 pt-md-5 border-top">
+			© 2021
+		</footer>
+
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
+	<script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="script.js" defer></script>
+</body>
+
+</html>
